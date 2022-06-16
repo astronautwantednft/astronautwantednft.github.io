@@ -32,16 +32,30 @@
     display: block;
     justify-content: center;
     align-items: center;
-    max-width:80%;
+    max-width:100%;
     /* max-height:95px; */
     width: auto;
     height: auto;
-    margin-top: 20px;
-    right:-10%;
+    margin-top: 10%;
+    /* right:-10%; */
     /* top: 800% */
     /* bottom: 10%; */
   }
-  
+  #s_img {
+    /* position: relative; */
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    min-width:100%;
+    /* display: flex; */
+    /* max-height:400px; */
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+    /* right:-10%; */
+    /* top: 800% */
+    /* bottom: 10%; */
+  }
 body
 {
     background: rgb(22, 22, 22);
@@ -67,15 +81,15 @@ html {
 
 .ca3-scroll-down-link {
   cursor:pointer;
-	height: 10px;
-	width: 10px;
+	height: 50px;
+	width: 50px;
 	/* margin: 0px 0 0 -100px; */
 	/* line-height: 60px; */
     margin-left: auto; 
     margin-right: auto; 
 	position: absolute;
 	/* right: 3vw; */
-	bottom: 10px;
+	bottom: 50px;
 	color: #FFF;
 	text-align: center;
     justify-items: center;
@@ -122,9 +136,10 @@ section
     align-items: center;
     overflow: hidden;
     padding: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2vh;
+    padding-right: 2vh;
     color: rgb(255, 255, 255);
+    /* margin-bottom: 5vh; */
 }
 h1
 {
@@ -141,7 +156,7 @@ h1
     /* margin-bottom: 20px; */
     z-index: 5;
     color: #FFF;
-    font-size: 4px;
+    font-size: 2vh;
     margin:auto;
     line-height:auto;
     vertical-align:middle;
@@ -164,8 +179,8 @@ h2
     /* margin-bottom: 20px; */
     /* z-index: 5; */
     /* color: #FFF; */
-    font-size: 24px;
-    /* margin:auto; */
+    font-size: 10vh;
+    margin:auto;
     /* line-height:auto; */
     /* vertical-align:middle; */
 
@@ -188,7 +203,7 @@ h3
     /* z-index: 5; */
     /* color: #FFF; */
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 9vh;
     /* margin:auto; */
     /* line-height:auto; */
     /* vertical-align:middle; */
@@ -200,7 +215,8 @@ h4
 {
     position: relative;
     color: #fff;
-    font-size: 12px;
+    font-size: 5vh;
+    /* max-width: 90%; */
 }
 
 section p
@@ -208,7 +224,7 @@ section p
     text-align: justify;
     position: relative;
     color: #fff;
-    font-size: 2vw;
+    font-size: 2vh;
     margin-top: 10px;
 }
 /* 
