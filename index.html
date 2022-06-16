@@ -23,17 +23,16 @@
         <p>Driven by a deep desire to tell stories, the astronauts seek to find creative and innovative professionals to create content. With a diverse landscape of content creation, we serve every platform and never stop evolving.<br>Native in web3, taking blockchain technology as the core of community building, the Astronauts use technology to inspire and elaborate on any content that wants to be told. <br>Collaboration between worldwide operating persons, stretching into the metaverse, allows us to create meaningful experiences with a vast talent tool.<br>If you want to share your creative journey, join us - Astronaut Wanted.<br>To the moon!</p>
     </div>
 </section>
-</section>
-<section class="section1">
+<section class="section2">
   <div class="content">
       <h2><mark>COLLECTION GENERATION</mark></h2>
-      <h3>COKE BURGER DAY DROP</h3>
+      <!-- <h3>COKE BURGER DAY DROP</h3> -->
       <p>Astronauts helped the Buoy team deliver an NFT collection celebrating burger day. High visual fidelity paired with a short turnaround time made this project unique as the team worked with Buoy’s Artists and team to deliver 4080 unique generated loops.</p>
-      <img id="s_img" src="/asset/coca-cola-400px.gif" />
-      <p><br><br><br></p>
+      <!-- <img id="s_img" src="/asset/coca-cola-400px.gif" />
+      <p><br><br><br></p> -->
   </div>
 </section>
-<section class="section2">
+<section class="section3">
   <div class="content">
       <h2><mark>PROJECT DEVELOPMENT</mark></h2>
       <h3>LUXY GENESIS DROP</h3>
@@ -42,19 +41,30 @@
       <p><br><br><br></p>
   </div>
 </section>
-<section class="section3">
+<section class="section4">
   <div class="content">
       <h2><mark>ADVISING AND CONSULTING</mark></h2>
       <h3>LUXY.IO</h3>
       <p>Atara and Grizz are proud advisors for Luxy.io, contributing their knowledge in latest technology being used to deploy the metaverse and other interactive experiences.</p>
   </div>
 </section>
-<section class="section4">
+<section class="section5">
   <div class="content">
-    <h4><mark>FIND US</mark><br>T: @astrowantednft<br>E: astronautwantednft@gmail.com<br></h4>
+      <h2><mark>FIND US</mark></h2>
+      <!-- <h3>@astrowantednft</h3> -->
+      <p>T: @astrowantednft<br>E: astronautwantednft@gmail.com<br></p>
+      <!-- <p>Atara and Grizz are proud advisors for Luxy.io, contributing their knowledge in latest technology being used to deploy the metaverse and other interactive experiences.</p> -->
+      
+  </div>
+  <img id="endimg" src="/asset/astronaut_white_horiz.svg" />
+</section>
+<!-- <section class="section5">
+  <div class="content">
+    <h2><mark>FIND US</mark><br></h3>
+    <p>T: @astrowantednft<br>E: astronautwantednft@gmail.com<br></p>
     <img id="endimg" src="/asset/astronaut_white_horiz.svg" />
   </div>
-</section>
+</section> -->
 <script type="text/javascript">
 
   let s0 = document.querySelector('body > section.section0');
@@ -62,6 +72,7 @@
   let s2 = document.querySelector('body > section.section2');
   let s3 = document.querySelector('body > section.section3');
   let s4 = document.querySelector('body > section.section4');
+  let s5 = document.querySelector('body > section.section5');
 
   function offset(el) {
       var rect = el.getBoundingClientRect(),
@@ -77,6 +88,7 @@
       s2Offet = offset(s2);
       s3Offet = offset(s3);
       s4Offet = offset(s4);
+      s5Offet = offset(s5);
 
       let s0Value         =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s0Offet.top ) / ( s0.offsetHeight  / 1.0 ) ) );
       let s0ValueText     =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s0Offet.top ) / ( s0.offsetHeight  / 12.0 ) ) );
@@ -105,6 +117,12 @@
           s4Value = 1.0 - s3Value;
       }
       s4.style.opacity = s4Value;
+
+      let s5Value =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s5Offet.top ) / ( s5.offsetHeight  / 1.0 ) ) );
+      if ( s4Value > 0.1 ){
+          s5Value = 1.0 - s4Value;
+      }
+      s5.style.opacity = s5Value;
   });
   
   // window.onbeforeunload = function () {
