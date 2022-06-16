@@ -11,16 +11,116 @@
   </head>
   <body class="body-ct">
     <section class="section0">
-      <h1>TWITTER: @astrowantednft<br>E: astronautwantednft@gmail.com</h1>
-      <img id="logoimg" src="/asset/astronaut_white_aw_helmet4x.png" />
+      <h1>T: <mark>@astrowantednft</mark><br>E: <mark>astronautwantednft@gmail.com</mark></h1>
+      <!-- <img id="logoimg" src="/asset/astronaut_white_aw_helmet4x.png" /> -->
+      <img id="logoimg" src="/asset/astronaut_white_helment2.svg" />
+      
       <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>    
   </section>
   <section class="section1">
     <div class="content">
-        
-        <h2>MISSION</h2>
+        <h2><mark>MISSION</mark></h2>
         <p>Driven by a deep desire to tell stories, the astronauts seek to find creative and innovative professionals to create content. With a diverse landscape of content creation, we serve every platform and never stop evolving.<br>Native in web3, taking blockchain technology as the core of community building, the Astronauts use technology to inspire and elaborate on any content that wants to be told. <br>Collaboration between worldwide operating persons, stretching into the metaverse, allows us to create meaningful experiences with a vast talent tool.<br>If you want to share your creative journey, join us - Astronaut Wanted.<br>To the moon!</p>
     </div>
 </section>
+</section>
+<section class="section1">
+  <div class="content">
+      <h2><mark>COLLECTION GENERATION</mark></h2>
+      <h3>COKE BURGER DAY DROP</h3>
+      <p>Astronauts helped the Buoy team deliver an NFT collection celebrating burger day. High visual fidelity paired with a short turnaround time made this project unique as the team worked with Buoy’s Artists and team to deliver 4080 unique generated loops.</p>
+  </div>
+</section>
+<section class="section2">
+  <div class="content">
+      <h2><mark>PROJECT DEVELOPMENT</mark></h2>
+      <h3>LUXY GENESIS DROP</h3>
+      <p>Astronaut Wanted’s founding project, generating the Genesis collection for multi-chain NFT marketplace Luxy.io. The team created original artwork, leading creative, production, and delivery of this founding collection.</p>
+  </div>
+</section>
+<section class="section3">
+  <div class="content">
+      <h2><mark>ADVISING AND CONSULTING</mark></h2>
+      <h3>LUXY.IO</h3>
+      <p>Atara and Grizz are proud advisors for Luxy.io, contributing their knowledge in latest technology being used to deploy the metaverse and other interactive experiences.</p>
+  </div>
+</section>
+<section class="section4">
+  <div class="content">
+    <h4><mark>FIND US</mark><br>T: @astrowantednft<br>E: astronautwantednft@gmail.com</h4>
+    <img id="endimg" src="/asset/astronaut_white_aw_helmet.svg" />
+  </div>
+</section>
+<script type="text/javascript">
+
+  let s0 = document.querySelector('body > section.section0');
+  let s1 = document.querySelector('body > section.section1');
+  let s2 = document.querySelector('body > section.section2');
+  let s3 = document.querySelector('body > section.section3');
+  let s4 = document.querySelector('body > section.section4');
+
+  function offset(el) {
+      var rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  }
+
+  window.addEventListener( 'scroll', function(){
+      idleTime = -2.5;
+      s0Offet = offset(s0);
+      s1Offet = offset(s1);
+      s2Offet = offset(s2);
+      s3Offet = offset(s3);
+      s4Offet = offset(s4);
+
+      let s0Value         =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s0Offet.top ) / ( s0.offsetHeight  / 1.0 ) ) );
+      let s0ValueText     =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s0Offet.top ) / ( s0.offsetHeight  / 12.0 ) ) );
+      s0.style.opacity = s0Value;
+
+      let s1Value =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s1Offet.top ) / ( s1.offsetHeight  / 1.0 ) ) );
+      if ( s0Value > 0.1 ){
+          s1Value = 1.0 - s0Value;
+      }
+      s1.style.opacity = s1Value;
+
+      let s2Value =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s2Offet.top ) / ( s2.offsetHeight  / 1.0 ) ) );
+      if ( s1Value > 0.1 ){
+          s2Value = 1.0 - s1Value;
+      }
+      s2.style.opacity = s2Value;
+
+      let s3Value =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s3Offet.top ) / ( s3.offsetHeight  / 1.0 ) ) );
+      if ( s2Value > 0.1 ){
+          s3Value = 1.0 - s2Value;
+      }
+      s3.style.opacity = s3Value;
+
+      let s4Value =  Math.max( 0.0, Math.min(1.0, 1 - ( window.scrollY - s4Offet.top ) / ( s4.offsetHeight  / 1.0 ) ) );
+      if ( s3Value > 0.1 ){
+          s4Value = 1.0 - s3Value;
+      }
+      s4.style.opacity = s4Value;
+  });
+  
+  // window.onbeforeunload = function () {
+  //     window.scrollTop(0);
+  // };
+  window.onorientationchange = function() { 
+      window.location.reload(); 
+  };
+
+  function resize()
+  {
+      var heights = window.innerHeight;
+      document.querySelector("body > section.section0").style.height = heights + "px";
+  }
+  resize();
+  window.onresize = function() {
+      resize();
+  };
+
+  
+</script>
  </body>
 </html>
